@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+
+h1 {
+    color:hsl(229, 57%, 11%);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h1 span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+h6 span {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+P {
+    font-weight: 700;
+}
+
+.container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Backgrounds */
+
+.background {
+    background-color: hsl(228, 56%, 26%);
+}
+
+.background-icons {
+    height: 50px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+/* Right Content */
+
+.title {
+    border-radius: 10px 100px 10px 10px;
+    width: 85%;
+    margin-bottom: 30px;
+    padding: 45px;
+}
+
+.title-logo {
+    margin-bottom: 30px;
+}
+
+/* Left Content */
+
+.storage {
+    text-align: center;
+    border-radius: 10px;
+    width: 85%;
+    padding: 30px 30px 50px;
+}
+
+.storage-p {
+    justify-content: space-between;
+}
+
+/* Usage Bar */
+
+.usage-bar {
+    background-color: hsl(229, 57%, 11%);
+    border: 3px solid hsl(229, 57%, 11%);
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.usage-slide {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    width: 75%;
+    padding: 1px;
+}
+
+.usage-slide-circle {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 2%;
+    padding: 6px;
+    margin-left: 94%;
+}
+
+.usage-left {
+    text-align: center;
+    width: 55%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 6%;
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url(../images/bg-desktop.png);
+        background-size: 100% 55%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .container {
+        padding: 100px;
+        position: relative;
+        left: 80px;
+        bottom: 25px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+    .title {
+        width: 50%;
+    }
+
+    .storage {
+        text-align: left;
+        width: 100%;
+        padding: 30px;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+
+    .usage-bar {
+        margin: 20px 0 10px;
+    }
+
+    .usage-slide-circle {
+        margin-left: 96.5%;
+    }
+
+    .usage-left {
+        width: 30%;
+        right: 20%;
+        bottom: 15%;
+    }
+
+    .usage-left::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        border-top: 30px solid #fff;
+        border-left: 30px solid transparent;
+        bottom: -1.2em;
+        right: 0;
+    }
+}
