@@ -104,17 +104,17 @@ P {
     border-radius: 50%;
     width: 2%;
     padding: 6px;
-    margin-left: 94%;
+    margin-left: 92%;
 }
 
 .usage-left {
     text-align: center;
-    width: 55%;
+    width: 12rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
     padding: 10px 20px;
     position: relative;
-    bottom: 6%;
+    bottom: 3rem;
 }
 
 @media (min-width: 1000px) {
@@ -152,8 +152,8 @@ P {
         text-align: left;
         width: 100%;
         padding: 30px;
-        margin-left: 30px;
-        margin-top: 25px;
+        margin-left: 2rem;
+        margin-top: 1rem;
     }
 
     .usage-bar {
@@ -165,9 +165,9 @@ P {
     }
 
     .usage-left {
-        width: 30%;
-        right: 20%;
-        bottom: 15%;
+        width: 25rem;
+        right: 15rem;
+        bottom: 6rem;
     }
 
     .usage-left::after {
